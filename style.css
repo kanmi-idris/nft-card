@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Outfit;
+    font-size: 1.125rem;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(216, 50%, 16%);
+    width: 18.75rem;
+    margin: 10% auto;
+    position: relative;
+    border-radius: 0.9375rem;
+
+
+}
+
+
+.img-container {
+    position: relative;
+    border-radius: 1.75rem;
+}
+
+.img-container:hover {
+    background-color: hsl(178, 100%, 50%);
+}
+
+.nft-img {
+    border-radius: 1.75rem;
+    width: 18.75rem;
+    padding: 1.25rem;
+}
+.nft-img:hover {
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+}
+.nft-img:hover ~ .nft-hover-img {
+    display: block;
+}
+
+.nft-hover-img {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .nft-img:hover {
+   
+} */
+
+.nft-name {
+    font-weight: 600;
+    padding-bottom: 0.9375rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.nft-name:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.nft-info {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+
+}
+
+.nft-text {
+    padding: 0 1.25rem;
+}
+
+.nft-price {
+    margin-right: 3.75rem;
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+.nft-expiry {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+.date-price {
+    padding-top: 0.9375rem;
+    padding-bottom: 0.625rem;
+}
+.nft-crtr-info {
+    margin: 1.25rem 0;
+    margin-right: 1.5625rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.crtr-name {
+    padding-top: 0.3125rem;
+}
+.nft-crtr-img {
+    width:1.875rem;
+    height: 1.875rem;
+    margin-right: 0.9375rem;
+    border: 0.125rem solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.division-line {
+    /* margin: 2rem 0 0.9rem 0; */
+    display: block;
+    background-color: white;
+
+}
+
+.crtr-info-text1 {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    padding-right: 0.125rem;
+
+}
+
+.crtr-info-name {
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+
+}
+.crtr-info-name:hover {
+    
+    color: hsl(178, 100%, 50%);
+
+}
+
+.attribution { font-size: 0.6875rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
